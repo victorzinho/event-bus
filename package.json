@@ -37,7 +37,7 @@
 	"scripts": {
 		"test": "karma start",
 		"testd": "karma start --single-run=false --auto-watch --browsers=Chrome --reporters=progress",
-		"lint": "eslint . test",
+		"lint": "eslint src test",
 		"coveralls": "cat ./coverage/lcov/lcov.info | codecov --disable=gcov"
 	}
 }

@@ -1,0 +1,38 @@
+{
+	"name": "@geoladris/event-bus",
+	"version": "0.0.1-alpha.1",
+	"license": "MIT",
+	"description": "Event Bus",
+	"repository": "git@github.com:victorzinho/event-bus.git",
+	"author": "Víctor González <victor.gonzalez@geomati.co>",
+	"contributors": [
+		"Fernando González <fernando.gonzalez@geomati.co> (http://www.fergonco.org/)",
+		"Micho García <micho.garcia.geomati.co> (http://michogarcia.org/)"
+	],
+	"main": "src/bus.js",
+	"dependencies": {
+		"jquery": "^2.1.0"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-eslint": "^7.2.1",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"eslint": "^3.18.0",
+		"eslint-config-airbnb-es5": "^1.1.0",
+		"eslint-plugin-react": "^6.10.3",
+		"jasmine-core": "^2.5.2",
+		"karma": "~1.3.0",
+		"karma-chrome-launcher": "~2.0.0",
+		"karma-coverage": "~1.1.1",
+		"karma-jasmine": "~1.0.2",
+		"karma-phantomjs-launcher": "~1.0.2",
+		"karma-webpack": "^2.0.4",
+		"phantomjs-prebuilt": "^2.1.14",
+		"webpack": "^3.5.6"
+	},
+	"scripts": {
+		"test": "karma start",
+		"lint": "eslint . test"
+	}
+}

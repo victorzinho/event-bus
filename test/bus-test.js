@@ -1,4 +1,4 @@
-import bus from '../bus.js';
+import bus from '../src/bus.js';
 
 beforeEach(function () {
   bus.stopListenAll();

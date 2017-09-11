@@ -27,22 +27,19 @@ module.exports = function c(config) {
       module: {
         loaders: [{
           test: /\.js$/,
-          include: [path.join(__dirname, 'src'), path.join(__dirname, 'test')],
           loader: 'babel-loader',
           options: {
             presets: ['env']
           }
-        }],
-        rules: [{
-          test: /\.js$|\.jsx$/,
+        }, {
+          test: /\.js$/,
+          exclude: /node_modules|\-test\.js$/,
           use: {
             loader: 'istanbul-instrumenter-loader',
             options: {
               esModules: true
             }
-          },
-          enforce: 'post',
-          exclude: /node_modules|\-test\.js$/
+          }
         }]
       }
     },

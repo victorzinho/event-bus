@@ -38,6 +38,6 @@
 		"test": "karma start",
 		"testd": "karma start --single-run=false --auto-watch --browsers=Chrome --reporters=progress",
 		"lint": "eslint . test",
-		"coveralls": "cat ./coverage/lcov.info | codecov"
+		"coveralls": "cat ./coverage/lcov/lcov.info | codecov --disable=gcov"
 	}
 }

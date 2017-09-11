@@ -33,3 +33,13 @@ it('stops listening all', function () {
   bus.stopListenAll();
   bus.send('test');
 });
+
+it('calls subsequent listeners on fail', function (done) {
+  bus.listen('test', function () {
+    throw new Error('');
+  });
+  bus.listen('test', function () {
+    done();
+  });
+  bus.send('test');
+});

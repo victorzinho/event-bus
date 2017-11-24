@@ -36,8 +36,9 @@
 		"webpack": "^3.5.6"
 	},
 	"scripts": {
-		"build": "babel src --out-dir dist",
-		"prepublish": "yarn run build",
+		"build": "babel src --out-dir dist --presets env",
+		"prepack": "yarn run build",
+		"install": "yarn run build",
 		"test": "karma start",
 		"testd": "karma start --single-run=false --auto-watch --browsers=Chrome --reporters=progress",
 		"lint": "eslint src test",
